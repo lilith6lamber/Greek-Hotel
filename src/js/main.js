@@ -1,6 +1,5 @@
 $(function () {
     let lazyLoadInstance = new LazyLoad();
-    AOS.init();
 
     $('input, select').styler();
 
