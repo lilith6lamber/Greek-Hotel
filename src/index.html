@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/leaflet.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <nav class="flex">
+        <a href="index.html" class="logo-link">
+            <object type="image/svg+xml" data="./img/logo.svg" class="logo-svg">
+                <img src="./img/logo.svg" alt="logo">
+            </object>
+            <p class="logo-text">Keys Please</p>
+        </a>
+        <div class="user-action">
+            <a href="tel:+9714-421-4988" class="tel nav-elem">+9714-421-4988</a>
+            <a href="javascript:void(0)" class="user-act nav-elem">
+                <i class="icon-user"></i>
+            </a>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="promo-text">
+                <h1 class="title uppercase" data-aos="fade-up" data-aos-duration="1000">Luxury Hotel & Spa Resort</h1>
+                <p class="subtitle" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="500">We have the perfect accommodation for you.</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="welcome">
+            <div class="container">
+                <div class="check_wrap">
+                    <form method="post" id="check" class="flex">
+                        <div class="input_fields flex">
+                            <div class="col">
+                                <p class="label">Check In</p>
+                                <select name="check-in" id="check-in">
+                                    <option value="0">Jan</option>
+                                    <option value="1">Feb</option>
+                                    <option value="2">Jan</option>
+                                    <option value="3">Apr</option>
+                                    <option value="4">May</option>
+                                    <option value="5">Jun</option>
+                                    <option value="6">Jul</option>
+                                    <option value="7">Aug</option>
+                                    <option value="8">Sep</option>
+                                    <option value="9">Oct</option>
+                                    <option value="10">Nov</option>
+                                    <option value="11">Dec</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <input type="number" name="date" value="1" min="1">
+                            </div>
+                            <div class="col">
+                                <label for="nights">Nights</label>
+                                <input type="number" name="nights" id="nights" value="1" min="1">
+                            </div>
+                            <div class="col">
+                                <label for="persons">Persons</label>
+                                <input type="number" name="persons" id="persons" value="1" min="1">
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-grad">check availability</button>
+                    </form>
+                </div>
+                <h2 class="section-title">Welcome</h2>
+                <p class="subtitle">Staying in here doesn't have to cost a fortune. Book your stay with us and receive
+                    one of the lowest rates of any hostel in the city!</p>
+            </div>
+            <div class="container wide">
+                <div class="promo-hotel_wrap">
+                    <ul id="hotels">
+                        <li class="hotel-card">
+                            <div class="img_wrap">
+                                <div class="big">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/hotel1-1.webp">
+                                        <source type="image/jpeg" srcset="img/hotel1-1.jpg">
+                                        <img src="img/hotel1-1.jpg" alt="hotel">
+                                    </picture>
+                                </div>
+                                <div class="sm1">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/hotel1-2.webp">
+                                        <source type="image/jpeg" srcset="img/hotel1-2.jpg">
+                                        <img src="img/hotel1-2.jpg" alt="hotel">
+                                    </picture>
+                                </div>
+                                <div class="sm2">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/hotel1-3.webp">
+                                        <source type="image/jpeg" srcset="img/hotel1-3.jpg">
+                                        <img src="img/hotel1-3.jpg" alt="hotel">
+                                    </picture>
+                                </div>
+                            </div>
+                            
+                            <div class="info_wrap">
+                                <div class="text_wrap">
+                                    <h4 class="hotel-name">Mayfair Hotel & Spa in Coconut Grove</h4>
+                                    <p class="short-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                                </div>
+                                <a href="javascript:void(0)" class="btn">View all</a>
+                            </div>
+                        </li>
+                        <li class="hotel-card">
+                            <div class="img_wrap">
+                                <div class="big">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/hotel2-1.webp">
+                                        <source type="image/jpeg" srcset="img/hotel2-1.jpg">
+                                        <img src="img/hotel2-1.jpg" alt="hotel">
+                                    </picture>
+                                </div>
+                                <div class="sm1">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/hotel2-2.webp">
+                                        <source type="image/jpeg" srcset="img/hotel2-2.jpg">
+                                        <img src="img/hotel2-2.jpg" alt="hotel">
+                                    </picture>
+                                </div>
+                                <div class="sm2">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/hotel2-3.webp">
+                                        <source type="image/jpeg" srcset="img/hotel2-3.jpg">
+                                        <img src="img/hotel2-3.jpg" alt="hotel">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="info_wrap">
+                                <div class="text_wrap">
+                                    <h4 class="hotel-name">Fresh Boutique Hotel Mykonos</h4>
+                                    <p class="short-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                                </div>
+                                <a href="javascript:void(0)" class="btn">View all</a>
+                            </div>
+                        </li>
+                        <li class="hotel-card">
+                            <div class="img_wrap">
+                                <div class="big">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/hotel3-1.webp">
+                                        <source type="image/jpeg" srcset="img/hotel3-1.jpg">
+                                        <img src="img/hotel3-1.jpg" alt="hotel">
+                                    </picture>
+                                </div>
+                                <div class="sm1">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/hotel3-2.webp">
+                                        <source type="image/jpeg" srcset="img/hotel3-2.jpg">
+                                        <img src="img/hotel3-2.jpg" alt="hotel">
+                                    </picture>
+                                </div>
+                                <div class="sm2">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/hotel3-3.webp">
+                                        <source type="image/jpeg" srcset="img/hotel3-3.jpg">
+                                        <img src="img/hotel3-3.jpg" alt="hotel">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="info_wrap">
+                                <div class="text_wrap">
+                                    <h4 class="hotel-name">Bill & Coo Suites and Lounge</h4>
+                                    <p class="short-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                                </div>
+                                <a href="javascript:void(0)" class="btn">View all</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="slider-controls">
+                    <a href="javascript:void(0)" id="prev"></a>
+                    <a href="javascript:void(0)" id="next"></a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="offer flex">
+                    <div class="text_wrap">
+                        <h3 class="title">Relax and forget about problems </h3>
+                        <p class="main-text">
+                            Save money on your travel by using our Group Travel Offer for the whole of your gang, and
+                            we'll even help you book and sit together
+                        </p>
+                        <p class="sub-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut.
+                        </p>
+                        <a href="javascript:void(0)" class="btn btn-grad">Read more</a>
+                    </div>
+                    <div class="video_wrap">
+                        <video autoplay loop muted>
+                            <source src="video/mykonos.ogv" type='video/ogg; codecs="theora, vorbis"'>
+                            <source src="video/mykonos.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                            <source src="video/mykonos.webm" type='video/webm; codecs="vp8, vorbis"'>
+                        </video>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <div class="social-promo">
+            <div class="insta-logo_wrap">
+                <img src="./img/insta.png" alt="Instagram">
+                <p class="subtitle">Check out some pictures from our instagram page. #greece</p>
+            </div>
+            <div class="feed_wrap">
+                <ul id="feed" class="flex">
+                    <li data-aos="fade-up" data-aos-duration="500">
+                        <img src="./img/insta1.jpg" alt="post">
+                    </li>
+                    <li data-aos="fade-down" data-aos-duration="500" data-aos-delay="500">
+                        <img src="./img/insta2.jpg" alt="post">
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="500">
+                        <img src="./img/insta3.jpg" alt="post">
+                    </li>
+                    <li data-aos="fade-down" data-aos-duration="500" data-aos-delay="500">
+                        <img src="./img/insta4.jpg" alt="post">
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="500">
+                        <img src="./img/insta5.jpg" alt="post">
+                    </li>
+                    <li data-aos="fade-down" data-aos-duration="500" data-aos-delay="500">
+                        <img src="./img/insta6.jpg" alt="post">
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="500">
+                        <img src="./img/insta7.jpg" alt="post">
+                    </li>
+                    <li data-aos="fade-down" data-aos-duration="500" data-aos-delay="500">
+                        <img src="./img/insta8.jpg" alt="post">
+                    </li>
+                </ul>
+            </div>
+            <div class="review_wrap">
+                <div class="container">
+                    <ul id="review">
+                        <li class="review-card">
+                            <p class="name">Patrick neilson</p>
+                            <p class="review-text">We stayed at a Keys Please for 5 nights and enjoyed every moment of
+                                it. All the staff we extremely helpful, attentive and friendly. Celine greeted us and
+                                gave us a tour of the hotel properties before taking us to our room. The room is modern,
+                                clean, spacious, and has nice amenities.</p>
+                            <div class="stars_wrap">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                            </div>
+                        </li>
+                        <li class="review-card">
+                            <p class="name">Lara Croft</p>
+                            <p class="review-text">We stayed at a Keys Please for 5 nights and enjoyed every moment of
+                                it. All the staff we extremely helpful, attentive and friendly. Celine greeted us and
+                                gave us a tour of the hotel properties before taking us to our room. The room is modern,
+                                clean, spacious, and has nice amenities.</p>
+                            <div class="stars_wrap">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star no-star"></i>
+                            </div>
+                        </li>
+                        <li class="review-card">
+                            <p class="name">Johny Depp</p>
+                            <p class="review-text">We stayed at a Keys Please for 5 nights and enjoyed every moment of
+                                it. All the staff we extremely helpful, attentive and friendly. Celine greeted us and
+                                gave us a tour of the hotel properties before taking us to our room. The room is modern,
+                                clean, spacious, and has nice amenities.</p>
+                            <div class="stars_wrap">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="join-us">
+            <div class="container">
+                <div class="join_wrap" data-aos="zoom-in">
+                    <h2 class="section-title">Get Keys Please Rewards. Get Connected.</h2>
+                    <p class="subtitle">Tap into the power of perks, points, and exclusive deals. All from Keys Please
+                        Rewards.</p>
+                    <div class="user-action">
+                        <a href="javascript:void(0)" class="btn">Sign in</a>
+                        <a href="javascript:void(0)" class="btn">Join</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <h2 class="section-title">Services</h2>
+                <div class="services_wrap">
+                    <ul class="services-list flex">
+                        <li class="services-item" data-aos="fade-up">
+                            <object type="image/svg+xml" data="./img/wifi.svg">
+                                <img src="./img/wifi.svg" alt="wifi">
+                            </object>
+                            <p class="item-name">free wi-fi</p>
+                            <p class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+                        </li>
+                        <li class="services-item" data-aos="fade-up" data-aos-delay="300">
+                            <object type="image/svg+xml" data="./img/air.svg">
+                                <img src="./img/air.svg" alt="air">
+                            </object>
+                            <p class="item-name">air conditioning</p>
+                            <p class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+                        </li>
+                        <li class="services-item" data-aos="fade-up" data-aos-delay="600">
+                            <object type="image/svg+xml" data="./img/bath.svg">
+                                <img src="./img/bath.svg" alt="bath">
+                            </object>
+                            <p class="item-name">private bathroom</p>
+                            <p class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+                        </li>
+                        <li class="services-item" data-aos="fade-up" data-aos-delay="900">
+                            <object type="image/svg+xml" data="./img/tv.svg">
+                                <img src="./img/tv.svg" alt="tv">
+                            </object>
+                            <p class="item-name">flat screen tv</p>
+                            <p class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+                        </li>
+                        <li class="services-item row" data-aos="fade-up">
+                            <object type="image/svg+xml" data="./img/safe.svg">
+                                <img src="./img/safe.svg" alt="safe">
+                            </object>
+                            <p class="item-name">safe</p>
+                            <p class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+                        </li>
+                        <li class="services-item row" data-aos="fade-up" data-aos-delay="300">
+                            <object type="image/svg+xml" data="./img/frige.svg">
+                                <img src="./img/frige.svg" alt="frige">
+                            </object>
+                            <p class="item-name">refrigerator</p>
+                            <p class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+                        </li>
+                        <li class="services-item row" data-aos="fade-up" data-aos-delay="600">
+                            <object type="image/svg+xml" data="./img/drink.svg">
+                                <img src="./img/drink.svg" alt="drink">
+                            </object>
+                            <p class="item-name">free mini-bar</p>
+                            <p class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+                        </li>
+                        <li class="services-item row" data-aos="fade-up" data-aos-delay="900">
+                            <object type="image/svg+xml" data="./img/roomservice.svg">
+                                <img src="./img/roomservice.svg" alt="room service">
+                            </object>
+                            <p class="item-name">room service</p>
+                            <p class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="amenities">
+            <div class="container">
+                <h2 class="section-title">Amenities</h2>
+                <div class="amenities_wrap">
+                    <div class="row" data-aos="fade-up">
+                        <p class="group-name">Highlights</p>
+                        <ul class="group-list main">
+                            <li class="list-item">Pool</li>
+                            <li class="list-item">Room Service</li>
+                            <li class="list-item">Restaurant</li>
+                            <li class="list-item">Bar/Lounge</li>
+                            <li class="list-item">Free Breakfast</li>
+                            <li class="list-item">Free WI-FI</li>
+                        </ul>
+                    </div>
+                    <div class="row" data-aos="fade-up">
+                        <p class="group-name">About the property</p>
+                        <ul class="group-list">
+                            <li class="list-item">Pets Allowed ( Dog / Pet Friendly )</li>
+                            <li class="list-item">Smoking Allowed</li>
+                        </ul>
+                    </div>
+                    <div class="row" data-aos="fade-up">
+                        <p class="group-name">Things to do</p>
+                        <ul class="group-list">
+                            <li class="list-item">Pool</li>
+                            <li class="list-item">Restaurant</li>
+                            <li class="list-item">Bar/Lounge</li>
+                            <li class="list-item">Hot Tub</li>
+                        </ul>
+                    </div>
+                    <div class="row" data-aos="fade-up">
+                        <p class="group-name">Room types</p>
+                        <ul class="group-list">
+                            <li class="list-item">Kitchenette</li>
+                            <li class="list-item">Suites</li>
+                        </ul>
+                    </div>
+                    <div class="row" data-aos="fade-up">
+                        <p class="group-name">Internet</p>
+                        <ul class="group-list">
+                            <li class="list-item">Free Internet</li>
+                            <li class="list-item">Free High Speed Internet ( WiFi )</li>
+                        </ul>
+                    </div>
+                    <div class="row" data-aos="fade-up">
+                        <p class="group-name">Services</p>
+                        <ul class="group-list">
+                            <li class="list-item">Room Service</li>
+                            <li class="list-item">Shuttle Bus Service</li>
+                            <li class="list-item">Free Breakfast</li>
+                            <li class="list-item">Dry Cleaning</li>
+                            <li class="list-item">Meeting Rooms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="map"></div>
+        <section class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact_wrap flex">
+                    <div class="contact-info">
+                        <dl>
+                            <dt>Kallyas</dt>
+                            <dd>467 Devonshire Drive Ravenna, OH 44266</dd>
+                            <dt>Email</dt>
+                            <dd>
+                                <a href="mailto:Hello@kallyas.com">Hello@kallyas.com</a>
+                            </dd>
+                            <dt>Customer Support</dt>
+                            <dd>
+                                <a href="tel:+01800 1800 1234">01800 1800 1234</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="form">
+                        <form method="post" class="flex">
+                            <input type="text" name="name" placeholder="Name" id="name">
+                            <input type="email" name="email" placeholder="Email">
+                            <textarea name="message" placeholder="Message"></textarea>
+                        </form>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-grad">Send message</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <ul class="footer-nav">
+                <li>
+                    <a href="javascript:void(0)" class="footer-link">Home</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="footer-link">About Hotel</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="footer-link">Rooms</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="footer-link">News & Deals</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="footer-link">Contact us</a>
+                </li>
+            </ul>
+            <div class="socials">
+                <p>Follow Us:</p>
+                <ul class="socials-list">
+                    <li>
+                        <a href="javascript:void(0)" class="socials-link" target="_blank"><i
+                                class="icon-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="socials-link" target="_blank"><i
+                                class="icon-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="socials-link" target="_blank"><i
+                                class="icon-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="socials-link" target="_blank"><i
+                                class="icon-snapchat"></i></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="socials-link" target="_blank"><i
+                                class="icon-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="socials-link" target="_blank"><i
+                                class="icon-dribbble"></i></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="socials-link" target="_blank"><i
+                                class="icon-pinterest"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <p class="copy">Copyright &copy; 2016 Kallyas | Hogash.com</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/plugins/jquery.formstyler.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/plugins/jquery.bxslider.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="js/plugins/leaflet-tilelayer-colorfilter.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
