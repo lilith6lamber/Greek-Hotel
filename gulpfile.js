@@ -32,7 +32,7 @@ gulp.task('scripts', () => {
 });
 
 gulp.task('bundle', () => {
-    return gulp.src([pathSrc +'css/**/*.css', '!./src/css/style.css'])
+    return gulp.src(pathSrc + 'css/**/*.css')
         .pipe(cssnano())
 		.pipe(cnct('bundle.min.css'))
 		.pipe(gulp.dest(pathSrc + 'css'));
@@ -49,12 +49,12 @@ gulp.task('prefix', () => {
 });
 
 
-gulp.task('css', () => {
+/* gulp.task('css', () => {
     return gulp.src('src/css/style.css')
         .pipe(cssnano())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('src/css'));
-});
+}); */
 
 gulp.task('img', function () {
     return gulp.src(pathSrc + 'img/**/*')
@@ -68,10 +68,7 @@ gulp.task('img', function () {
 });
 
 gulp.task('move', (done) => {
-	const buildCSS = gulp.src([
-		'src/css/bundle.min.css',
-		'src/css/style.min.css'
-	])
+	const buildCSS = gulp.src('src/css/bundle.min.css')
 		.pipe(gulp.dest(pathBuild + 'css'));
 
 	const buildImg = gulp.src('src/img/**/*')
@@ -94,6 +91,6 @@ gulp.task('move', (done) => {
 	done();
 });
 
-gulp.task('build', gulp.series(gulp.parallel('prefix', 'img', 'scripts'), 'bundle', 'css', 'move'), function (done) {
+gulp.task('build', gulp.series(gulp.parallel('prefix', 'img', 'scripts'), 'bundle', 'move'), function (done) {
 	done();
 });
