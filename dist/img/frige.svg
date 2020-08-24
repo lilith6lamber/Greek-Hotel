@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44.781" height="75.81" viewBox="0 0 44.781 75.81">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        mix-blend-mode: luminosity;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="783.219" y="5100.72" width="44.781" height="75.81" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="783.219" y="5100.72" width="44.781" height="75.81" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDQuNzgxIiBoZWlnaHQ9Ijc1LjgxIiB2aWV3Qm94PSIwIDAgNDQuNzgxIDc1LjgxIj4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudCk7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9IjQ0Ljc4MSIgeTE9IjM3LjkwNSIgeDI9IjAiIHkyPSIzNy45MDUiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNDNjY2Q1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzdkODFlZCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNDQuNzgxIiBoZWlnaHQ9Ijc1LjgxIi8+Cjwvc3ZnPgo="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Forma_1" data-name="Forma 1" class="cls-1" d="M822.806,5100.72H788.4a5.185,5.185,0,0,0-5.184,5.18v61.77a5.185,5.185,0,0,0,5.184,5.18h0.4v2.18a1.526,1.526,0,0,0,3.05,0v-2.18H819.54v2.18a1.526,1.526,0,0,0,3.05,0v-2.18h0.216a5.185,5.185,0,0,0,5.184-5.18V5105.9A5.185,5.185,0,0,0,822.806,5100.72Zm-34.4,3.05h34.4a2.137,2.137,0,0,1,2.134,2.13v21.53H786.267V5105.9A2.138,2.138,0,0,1,788.4,5103.77Zm34.4,66.03H788.4a2.132,2.132,0,0,1-2.135-2.13v-37.19H824.94v37.19A2.131,2.131,0,0,1,822.806,5169.8ZM790.3,5136.1v8.28a1.525,1.525,0,0,0,3.049,0v-8.28A1.526,1.526,0,0,0,790.3,5136.1Zm3.049-13.49v-8.27a1.525,1.525,0,0,0-3.049,0v8.27A1.525,1.525,0,0,0,793.349,5122.61Z" transform="translate(-783.219 -5100.72)"/>
+</svg>

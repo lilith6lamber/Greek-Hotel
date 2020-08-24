@@ -1,6 +1,4 @@
 $(function () {
-    let lazyLoadInstance = new LazyLoad();
-
     $('input, select').styler();
 
     let hotelSlider = $('#hotels').bxSlider({
@@ -9,7 +7,8 @@ $(function () {
         controls: false,
         auto: true,
         speed: 2000,
-        mode: 'fade'
+        mode: 'fade',
+        adaptiveHeight: true
     });
 
     $('#prev').click(function (e) {
@@ -21,14 +20,6 @@ $(function () {
         hotelSlider.goToNextSlide();
     });
 
-/*     $('#feed').bxSlider({
-        pager: false,
-        keyboardEnabled: true,
-        minSlides: 2,
-        maxSlides: 8,
-        controls: false
-    }); */
-
     $('#review').bxSlider({
         pager: false,
         keyboardEnabled: true,
@@ -36,7 +27,8 @@ $(function () {
         auto: true,
         speed: 2000,
         controls: false,
-        mode: 'fade'
+        mode: 'fade',
+        adaptiveHeight: true
     });
 
 

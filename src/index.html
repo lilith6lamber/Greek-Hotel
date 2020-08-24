@@ -8,12 +8,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/jquery.formstyler.css">
-    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/bundle.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/leaflet.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -27,9 +24,7 @@
 <body>
     <nav class="flex">
         <a href="index.html" class="logo-link">
-            <object type="image/svg+xml" data="./img/logo.svg" class="logo-svg">
-                <img src="./img/logo.svg" alt="logo">
-            </object>
+            <img src="./img/logo.png" alt="logo" class="logo-img">
             <p class="logo-text">Keys Please</p>
         </a>
         <div class="user-action">
@@ -119,7 +114,7 @@
                             
                             <div class="info_wrap">
                                 <div class="text_wrap">
-                                    <h4 class="hotel-name">Mayfair Hotel & Spa in Coconut Grove</h4>
+                                    <h4 class="hotel-name">Mayfair Hotel & Spa</h4>
                                     <p class="short-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                                         do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                                         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
@@ -235,28 +230,28 @@
             </div>
             <div class="feed_wrap">
                 <ul id="feed" class="flex">
-                    <li data-aos="fade-up" data-aos-duration="500">
+                    <li data-aos="fade-down" data-aos-duration="200">
                         <img src="./img/insta1.jpg" alt="post">
                     </li>
-                    <li data-aos="fade-down" data-aos-duration="500" data-aos-delay="500">
+                    <li data-aos="fade-down" data-aos-duration="200" data-aos-delay="200">
                         <img src="./img/insta2.jpg" alt="post">
                     </li>
-                    <li data-aos="fade-up" data-aos-duration="500">
+                    <li data-aos="fade-down" data-aos-duration="200" data-aos-delay="400">
                         <img src="./img/insta3.jpg" alt="post">
                     </li>
-                    <li data-aos="fade-down" data-aos-duration="500" data-aos-delay="500">
+                    <li data-aos="fade-down" data-aos-duration="200" data-aos-delay="600">
                         <img src="./img/insta4.jpg" alt="post">
                     </li>
-                    <li data-aos="fade-up" data-aos-duration="500">
+                    <li data-aos="fade-down" data-aos-duration="200" data-aos-delay="800">
                         <img src="./img/insta5.jpg" alt="post">
                     </li>
-                    <li data-aos="fade-down" data-aos-duration="500" data-aos-delay="500">
+                    <li data-aos="fade-down" data-aos-duration="200" data-aos-delay="1000">
                         <img src="./img/insta6.jpg" alt="post">
                     </li>
-                    <li data-aos="fade-up" data-aos-duration="500">
+                    <li data-aos="fade-down" data-aos-duration="200" data-aos-delay="1200">
                         <img src="./img/insta7.jpg" alt="post">
                     </li>
-                    <li data-aos="fade-down" data-aos-duration="500" data-aos-delay="500">
+                    <li data-aos="fade-down" data-aos-duration="200" data-aos-delay="1400">
                         <img src="./img/insta8.jpg" alt="post">
                     </li>
                 </ul>
@@ -329,58 +324,42 @@
                 <div class="services_wrap">
                     <ul class="services-list flex">
                         <li class="services-item" data-aos="fade-up">
-                            <object type="image/svg+xml" data="./img/wifi.svg">
-                                <img src="./img/wifi.svg" alt="wifi">
-                            </object>
+                            <img src="./img/wifi.svg" alt="wifi" onerror="this.src='./img/wifi.png'">
                             <p class="item-name">free wi-fi</p>
                             <p class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
                         </li>
                         <li class="services-item" data-aos="fade-up" data-aos-delay="300">
-                            <object type="image/svg+xml" data="./img/air.svg">
-                                <img src="./img/air.svg" alt="air">
-                            </object>
+                            <img src="./img/air.svg" alt="air" onerror="this.src='./img/air.png'">
                             <p class="item-name">air conditioning</p>
                             <p class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
                         </li>
                         <li class="services-item" data-aos="fade-up" data-aos-delay="600">
-                            <object type="image/svg+xml" data="./img/bath.svg">
-                                <img src="./img/bath.svg" alt="bath">
-                            </object>
+                            <img src="./img/bath.svg" alt="bath" onerror="this.src='./img/bath.png'">
                             <p class="item-name">private bathroom</p>
                             <p class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
                         </li>
                         <li class="services-item" data-aos="fade-up" data-aos-delay="900">
-                            <object type="image/svg+xml" data="./img/tv.svg">
-                                <img src="./img/tv.svg" alt="tv">
-                            </object>
+                            <img src="./img/tv.svg" alt="tv" onerror="this.src='./img/tv.png'">
                             <p class="item-name">flat screen tv</p>
                             <p class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
                         </li>
                         <li class="services-item row" data-aos="fade-up">
-                            <object type="image/svg+xml" data="./img/safe.svg">
-                                <img src="./img/safe.svg" alt="safe">
-                            </object>
+                            <img src="./img/safe.svg" alt="safe" onerror="this.src='./img/safe.png'">
                             <p class="item-name">safe</p>
                             <p class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
                         </li>
                         <li class="services-item row" data-aos="fade-up" data-aos-delay="300">
-                            <object type="image/svg+xml" data="./img/frige.svg">
-                                <img src="./img/frige.svg" alt="frige">
-                            </object>
+                            <img src="./img/frige.svg" alt="frige" onerror="this.src='./img/frige.png'">
                             <p class="item-name">refrigerator</p>
                             <p class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
                         </li>
                         <li class="services-item row" data-aos="fade-up" data-aos-delay="600">
-                            <object type="image/svg+xml" data="./img/drink.svg">
-                                <img src="./img/drink.svg" alt="drink">
-                            </object>
+                            <img src="./img/drink.svg" alt="drink" onerror="this.src='./img/drink.png'">
                             <p class="item-name">free mini-bar</p>
                             <p class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
                         </li>
                         <li class="services-item row" data-aos="fade-up" data-aos-delay="900">
-                            <object type="image/svg+xml" data="./img/roomservice.svg">
-                                <img src="./img/roomservice.svg" alt="room service">
-                            </object>
+                            <img src="./img/roomservice.svg" alt="room service" onerror="this.src='./img/roomservice.png'">
                             <p class="item-name">room service</p>
                             <p class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
                         </li>
@@ -435,7 +414,7 @@
                     </div>
                     <div class="row" data-aos="fade-up">
                         <p class="group-name">Services</p>
-                        <ul class="group-list">
+                        <ul class="group-list services">
                             <li class="list-item">Room Service</li>
                             <li class="list-item">Shuttle Bus Service</li>
                             <li class="list-item">Free Breakfast</li>
@@ -533,12 +512,10 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="js/plugins/jquery.formstyler.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="js/plugins.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/plugins/jquery.bxslider.min.js"></script>
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-    <script src="js/plugins/leaflet-tilelayer-colorfilter.min.js"></script>
     <script src="js/main.js"></script>
     <script>
         AOS.init();
